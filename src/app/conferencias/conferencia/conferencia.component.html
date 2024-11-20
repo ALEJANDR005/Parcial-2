@@ -1,0 +1,24 @@
+<p>
+  conferencia works!
+</p>
+
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">Nombre de la conferencia</th>
+          <th class="h4">Fecha Inicial</th>
+          <th class="h4">Fecha Final</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let conferencia of conferencia">
+          <td>{{conferencia.nombre}}</td>
+          <td>{{conferencia.fechaInicial}}</td>
+          <td>{{conferencia.fechaFinal}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
